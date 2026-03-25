@@ -1,0 +1,32 @@
+# --- Projet ---
+PROJECT_NAME           = "Krojanty"
+PROJECT_BRIEF          = "Jeu de plateau - GUI GTK4 + Réseau + IA"
+OUTPUT_DIRECTORY       = docs
+OPTIMIZE_OUTPUT_FOR_C  = YES
+EXTRACT_ALL            = YES
+EXTRACT_STATIC         = YES
+
+# --- Sources à scanner ---
+RECURSIVE              = YES
+INPUT                  = src include tests
+FILE_PATTERNS          = *.h *.c
+EXCLUDE                = build assets
+
+# --- Mise en forme HTML ---
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+GENERATE_TREEVIEW      = YES
+
+# --- Graphes (Graphviz) ---
+HAVE_DOT               = YES
+DOT_IMAGE_FORMAT       = svg
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+DOT_TRANSPARENT        = YES
+INTERACTIVE_SVG        = YES
+
+# --- Divers utile ---
+FULL_PATH_NAMES        = NO
+SORT_BY_SCOPE_NAME     = YES
+WARN_IF_UNDOCUMENTED   = NO
+QUIET                  = NO
